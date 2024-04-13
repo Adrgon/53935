@@ -1,0 +1,13 @@
+variables
+    let
+    const 
+condicionales
+    if, else, else if
+bucles
+    while
+Salidas por consola
+    console.log()
+
+---------------------------
+Vamos a asgnar valores a variables de aleatoria. 
+---------------------------

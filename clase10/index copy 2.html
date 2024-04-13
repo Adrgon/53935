@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    #res {
+        width: 200px;
+        height: 300px;
+        background-color: bisque;
+    }
+</style>
+
+</head>
+<body>
+    
+<!--    
+    <nav class="navegacion">
+        <a href="#">Vender</a>
+        <a href="#">Ayuda</a>
+        <a href="#">Registro</a>
+        <a href="#">Iniciar Sesión</a>
+    </nav> 
+-->
+<input type="text" id="busqueda">
+<button>buscar</button>
+
+    
+
+    
+
+    <div id="res">
+        
+    </div>
+
+        <script>
+/*             const btn = document.querySelector('button')
+            btn.addEventListener('mouseenter', () => {
+                document.querySelector("#res").style.display = "none"
+            })
+            btn.addEventListener('mouseout', () => {
+                document.querySelector("#res").style.display = "block"
+
+            }) */
+            const busqueda = document.querySelector("#busqueda")
+            const res = document.querySelector("#res")
+            const btn = addEventListener('click', ()=>{
+                if(busqueda.value === "Audi"){  
+                    res.innerHTML = `
+                    <ul>
+                        <li>item1</li>
+                        <li>item2</li>
+                        <li>item3</li>
+                        <li>item4</li>
+                        <li>item5</li>
+                    </ul>
+                    `
+
+                }else {
+                    res.innerHTML = "<p>No se encontro esa marca</p>"
+                }
+            })
+            
+
+        </script>
+    
+</body>
+</html>

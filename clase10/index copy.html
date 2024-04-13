@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+/*         console.log(1)
+        document.addEventListener('DOMContentLoaded', ()=> {
+            console.log(2)
+            console.log("Dom Cargado")
+
+            const btn = document.querySelector('button');
+            btn.addEventListener('click', () => alert("hola"))
+        })
+        console.log(3); */
+        document.addEventListener('DOMContentLoaded', ()=>{
+            const nav = document.querySelector('.navegacion')
+            //console.log(nav);
+            nav.addEventListener('mouseenter', ()=> {
+                console.log("Entrando a la navegacion");
+                nav.style.backgroundColor = "yellow"
+            })
+
+            nav.addEventListener('mouseout', ()=> {
+                console.log("saliendo de la navegacion")
+                nav.style.backgroundColor = "transparent"
+            })
+
+
+
+        })
+
+        // mousedown --> cuando se presiona
+        // click --> click
+        // dbclick --> doble click
+        // mouseup --> al soltar el boton del mouse
+
+    </script>
+</head>
+<body>
+    
+    <nav class="navegacion">
+        <a href="#">Vender</a>
+        <a href="#">Ayuda</a>
+        <a href="#">Registro</a>
+        <a href="#">Iniciar Sesión</a>
+    </nav>
+
+    
+</body>
+</html>

@@ -1,0 +1,4 @@
+Tema 1 : carga de script con async y defer
+    Cuando no se que usar, siempre usar defer
+Tema 2 : Copia por valor y Copia por referencia
+Tema 3 : Hoisting

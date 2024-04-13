@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<!--     <style>
+        .principal {
+            background-color: aquamarine;
+        }
+        .texto {
+            color:blueviolet;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- <h1 id="titulo">Hola mundo</h1> -->
+
+    <div id="resultado"></div>
+ 
+    <script>
+
+    let tarjeta = {
+        titulo: "Los simpson",
+        direccion: "Av siempre viva ..",
+        img: "https://phantom-marca.unidadeditorial.es/b6f9f0ef63fe7a30af806481c4ddbe65/resize/1320/f/webp/assets/multimedia/imagenes/2023/08/13/16919255383743.jpg"
+    }
+
+
+        //let titulo = document.querySelector('#titulo')
+        //console.log(titulo.innerText);
+        //let resultado = document.querySelector("#resultado")
+        //resultado.innerText = titulo.innerText
+
+        //titulo.innerText = "Hola Coders";
+        let res = document.querySelector('#resultado')
+
+        res.innerHTML = `
+        <div class="card" style="width: 18rem;">
+            <img src="${tarjeta.img}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">${tarjeta.titulo}</h5>
+                <p class="card-text">${tarjeta.direccion}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        `
+
+/*         
+        res.innerHTML = '<h2>Hola Mundo</h2><p>adfasdfs</p>'
+        res.className = "principal";
+        res.className = "";
+        res.classList.add('principal')
+        res.classList.add('texto')
+        res.classList.remove('principal') 
+*/
+/* let texto = "Nuevo texto: "
+
+        let parrafo = document.createElement('p');
+        let div = document.createElement('div')
+        //parrafo.textContent = texto + "Solo existen dos cosas infinitas"
+        div.appendChild(parrafo)
+        parrafo.innerHTML = "<h2>Hola texto</h2>"
+        parrafo.classList.add('texto')
+
+        res.appendChild(parrafo);
+
+        res.remove() */
+
+    </script>
+</body>
+</html>

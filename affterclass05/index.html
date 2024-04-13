@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+        <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v2.6.1/dist/aframe-extras.min.js"></script>
+        <script src="https://cdn.rawgit.com/ngokevin/kframe/d7bd9968/components/sun-sky/dist/aframe-sun-sky.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img src="piso.jpeg" id="piso">
+            <img src="pared.jpeg" id="pared" >
+        </a-assets>
+
+        <a-sun-sky material="sumPosition: 0 1 0"></a-sun-sky>
+
+        <a-entity id="jugador" camera kinematic-body universal-controls position="0 1.7 -1">
+            <a-text value="" color="black" id="score" position="-1 -.5 -1"></a-text>
+            <a-cursor fuse="true" fuse-timeout="800"></a-cursor>
+        </a-entity>
+
+        <a-grid static-body src="#piso"></a-grid>
+        <a-entity id="muros" src="#pared"></a-entity>
+        <a-entity id="premios" ></a-entity>
+    </a-scene>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

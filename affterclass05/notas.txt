@@ -1,0 +1,5 @@
+Enlazar la libreria principal (afream)
+Agregar plugins especificos para esta libreria
+Generar una inteface (html)
+Completar la inteface (javascript)
+Crear funcionalidad (javascript)

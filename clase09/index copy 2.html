@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p class="p">asdfafsadfsdf</p>
+    <p class="seleccionado">asdfafsadfsdf</p>
+    <p class="p"> classasdfafsadfsdf</p>
+    <p>asdfafsadfsdf</p>
+    
+    <img src="" alt="">
+
+    <script>
+
+        //document.querySelector()  // accede a un elemento el primero que encutra
+        //document.querySelectorAll() // coleccion de elmentos
+
+        // En los parametros va una consulta css
+/*
+id
+class
+etiqueta
+atributo
+combinacion css
+*/
+    let p = document.querySelector('p')
+    console.log(p)
+    let ps = document.querySelectorAll('p')
+    console.log(ps)
+    let texto = document.querySelector('#texto')
+    console.log(texto)
+    let seleccionado = document.querySelector('.seleccionado')
+    console.log(seleccionado)
+    let img = document.querySelector('img')
+    console.log(img)
+
+    </script>
+</body>
+</html>

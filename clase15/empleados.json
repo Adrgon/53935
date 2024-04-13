@@ -1,0 +1,17 @@
+[
+    {
+      "nombre": "Bruno",
+      "empresa": "coca cola",
+      "puesto": "Desarrollador"
+    },
+    {
+      "nombre": "Nicolas",
+      "empresa": "meta",
+      "puesto": "Director de IT"
+    },
+    {
+      "nombre": "Daniel",
+      "empresa": "google",
+      "puesto": "Diseñador"
+    }
+]

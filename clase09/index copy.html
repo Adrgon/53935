@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="aceptar"><strong>Aceptar</strong></button>
+    <button id="aceptar">Cancelar</button>
+
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+    </ul>
+
+
+    <p class="p">asdfasdfsaf</p>
+    <p>asdfasdfsaf</p>
+    <p class="p">asdfasdfsaf</p>
+    <p>asdfasdfsaf</p>
+
+    <script>
+        const btnAceptar = document.getElementById("aceptar"); // 1 elemento
+        console.log(btnAceptar.innerText)
+        console.log(btnAceptar.textContent)
+        console.log(btnAceptar.innerHTML)
+        btnAceptar.innerText = "Agree";
+        btnAceptar.textContent = "Si";
+
+        const lis = document.getElementsByTagName('li') // coleccion de elementos
+        console.log(lis)
+        lis.textContent = "Esto fue modificado"
+        lis[3].textContent = "Esto fue modificado"
+
+        const ps = document.getElementsByClassName('p') // coleccion de elementos
+        console.log(ps)
+        
+        for(let i=0; i<ps.length; i+=1){
+            ps[i].style.color = "red";
+        }
+
+        for(let p of ps){
+            p.style.color = "blue";
+        }
+
+        
+
+    </script>
+</body>
+</html>
