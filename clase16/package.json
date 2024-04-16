@@ -1,0 +1,16 @@
+{
+  "name": "proyectojavascript",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto javascript con node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "server"
+  ],
+  "author": "Adrign L Gonzalez - @adrgon",
+  "license": "MIT"
+}
